@@ -1,0 +1,10 @@
+Given an integer, n , find each x such that:
+
+0 <= x <= n
+n + x == n xor x
+
+Solution : 
+
+n_bits  = number of 0 bits in n;
+to do this count the number of zeroes in 'n' and result will be the "2 to the power of n_bits"
+

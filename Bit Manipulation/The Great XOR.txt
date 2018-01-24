@@ -1,0 +1,13 @@
+Given a long integer, x , count the number of values of a satisfying the following conditions:
+a xor x > x;
+0 < a < x
+
+To find number of values satisfies this, 
+Count the number of bits : 
+
+        int bin = Long.toBinaryString(x).length();
+        
+Then 2 to the pow bits - actual number - 1;
+		
+        return (long)Math.pow(2,bin) - x - 1;
+        
