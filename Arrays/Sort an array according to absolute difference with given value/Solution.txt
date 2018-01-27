@@ -1,0 +1,11 @@
+Problem 
+
+Given an array of n distinct elements and a number x, 
+arrange array elements according to the absolute difference with x, i. e., 
+element having minimum difference comes first and so on.
+
+Solution
+
+create an temporary array store the absolute difference in it.
+Then sort the temporary array considering the original array as well
+in the end you will get the sorted array according to the absolute difference
