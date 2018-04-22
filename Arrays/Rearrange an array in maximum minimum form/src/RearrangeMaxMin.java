@@ -103,6 +103,25 @@ public class RearrangeMaxMin {
 			arr[i] = arr[i]/max_val;
 		}
 		
+		
+		//-----------------------------------------
+		
+		ArrayList<Integer> a = new ArrayList<Integer>();
+		
+		a.add(3);
+		a.add(2);
+		a.add(0);
+		a.add(1);
+		
+		  int m = a.size();
+		    for(int i = 0 ; i < a.size() ; i++)
+		    {
+		        int x = ((a.get(a.get(i)) % m) % m ) * m;
+		        x = a.get(i) + (x);
+		        
+		        a.set(i, x);
+		    }
+		
 	}
 
 }
